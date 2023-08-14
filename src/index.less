@@ -1,0 +1,81 @@
+.head-card {
+    padding: 10px 20px;
+    box-sizing: border-box;
+  }
+  
+  .flex-center {
+    display: flex;
+    align-items: center;
+  }
+  
+  .product-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 45px - 130px - 50px);
+  }
+  
+  .product-right {
+    flex: 1;
+    height: 100%;
+  }
+  
+  .product-title {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #000000;
+    text-align: left;
+    padding-bottom: 10px;
+  }
+  
+  .product-list {
+    height: calc(100% - 24px);
+    overflow-y: auto;
+  }
+  
+  .product-item {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    &-left {
+      display: flex;
+      &-info {
+        padding-left: 3px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &-name {
+          font-family: PingFangSC-Regular;
+          font-size: 14px;
+          color: #000000;
+          text-align: left;
+        }
+        &-number {
+          padding-top: 3px;
+          font-family: PingFangSC-Regular;
+          font-size: 11px;
+          color: #787878;
+          text-align: left;
+        }
+        &-price {
+          font-family: PingFangSC-Regular;
+          font-size: 18px;
+          color: #FF1800;
+          text-align: left;
+        }
+      }
+    }
+  }
+  
+  .cart {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+  }
+  
